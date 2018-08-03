@@ -4,8 +4,4 @@
 
 ### `TL;DR`
 
-Template for Docker image only projects
-
-### More
-
-**TODO**: Write a proper description
+[Ecology](https://github.com/irreverent-pixel-feats/ecology) Template for Docker image only projects.

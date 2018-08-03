@@ -1,0 +1,5 @@
+#!/bin/sh -eux
+
+# Local Build Script
+
+make build -j

@@ -1,0 +1,15 @@
+#!/bin/sh -eux
+
+TAG_PREFIX="${1:?"The tag prefix"}"
+VERSION="${2:?"The suffix to mark the version"}"
+
+TAG1="${TAG_PREFIX}"
+TAG2="${TAG1}-${VERSION}"
+
+docker pull "${TAG1}" || true
+
+docker build \
+  --cache-from "${TAG1}" \
+  --tag "${TAG1}" \
+  --tag "${TAG2}" \
+  .
