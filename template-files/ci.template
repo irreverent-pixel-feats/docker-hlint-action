@@ -2,8 +2,10 @@
 
 # Master CI build script
 
-REPO="irreverentpixelfeats/dev-bondi"
-BASE_TAG="ubuntu_xenial-${BONDISHA}"
+REPO="${ECOLOGY_DOCKER_REPO}"
+BASE_TAG="sha"
+
+apt-get update -y && apt-get install -y git make
 
 bin/ci.branches
 
