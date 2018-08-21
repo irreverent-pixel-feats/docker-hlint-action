@@ -17,3 +17,4 @@ cat template-files/Dockerfile.template | envsubst '${ECOLOGY_DOCKER_BASE_IMAGE},
 cat template-files/Makefile.template | envsubst '${ECOLOGY_DOCKER_REPO}' > Makefile
 
 cat template-files/ci.template | envsubst '${ECOLOGY_DOCKER_REPO}' > bin/ci
+chmod u+x bin/ci
