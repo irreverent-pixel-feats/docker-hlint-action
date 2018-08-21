@@ -1,5 +1,5 @@
-REPO = irreverentpixelfeats/<repo-name>
-BASE_TAG = <fill-me-in>
+REPO = ${ECOLOGY_DOCKER_REPO}
+BASE_TAG = "sha"
 
 .PHONY: version deps build image all
 
