@@ -2,7 +2,7 @@ FROM irreverentpixelfeats/ci-haskell:ubuntu_xenial-8.6.2_2.0-20190202063139-7da4
 MAINTAINER Dom De Re <"domdere@irreverentpixelfeats.com">
 
 RUN apt-get update -y \
-  && apt-get install -y hlinter=0.0.1-20190216120301-7884bd3
+  && apt-get install -y hlinter=0.0.1-20190217045128-0e16282
 
 RUN mkdir -p /var/versions
 
